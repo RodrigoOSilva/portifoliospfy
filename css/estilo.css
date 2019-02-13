@@ -1,0 +1,230 @@
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg,#ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;;
+}
+
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;    
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;    
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.9);
+    border-color: rgba(255,255,255,.9);
+}
+
+.divisor {
+    width: 1px;
+    background: #fff;
+    margin: 12px;
+}
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-purple {
+    background: #7c25f8;
+}
+
+.btn-purple:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-white {
+    border-color: white;
+    border-radius: 500px;
+}
+
+.btn-white:hover {
+    color: black;
+    background: white;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.albuns img{
+    margin: 15px 0px;
+}
+
+
+/* ------SERVICES------- */
+
+#services {
+    padding: 15px 0px;
+}
+
+#services img:hover {
+    opacity: 0.9;
+}
+
+#easy h3 {
+    color: #9bf0e1;
+}
+
+#easy h2, #easy p {
+    color: white;
+}
+
+.box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.rotate {
+transform: rotate(30deg);
+    padding-left: 80px;
+
+}
+
+/* -------FOOTER------ */
+
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4{
+    color: #919496;
+	font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover {
+    color: #9bf0e1;   
+    text-decoration: none;
+}
+
+footer .col-md-4 ul li {
+    list-style: none;
+    display: inline-block;
+	margin: 0 5px;
+}
+
+/*tipografia*/
+h1 {
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: #7c25f8;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #7c25f8;
+}
+
+/*/ Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+/* Small devices (landscape phones, 576px and up)*/
+/*/ Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2.8em;
+    }  
+    .btn-custom {
+        margin: 10px 15px;
+    }
+    
+    footer .logo {
+        padding-bottom: 10px;
+    }
+    
+    footer h4 {
+        margin-top: 10px;
+    }
+    
+    #easy .col-md-4 {
+        background-image: url(../imagens/iphone2.png);
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1 {
+        font-size: 3em;
+    }    
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+        
+    footer .logo {
+        padding-bottom: 10px;
+    }
+    
+    footer h4 {
+        margin-top: 10px;
+    }
+    
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+    
+    footer .list {
+        margin-left: 35px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    h1 {
+        font-size: 5em;
+    }
+    
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}
